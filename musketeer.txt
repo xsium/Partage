@@ -1,0 +1,76 @@
+malaya,272,227,5	script	Dartagnan	10118,{
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "Mmmh .... Qui diable êtes-vous ?";
+	next;
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "Ho ! Salutations à vous, jeune aventurier prénommé "+strcharinfo(0)+" !";
+	mes "Je me nomme Dartagnan, je fais partie de la légendaire garde royale d'un royaume très lointain ...";
+	next;
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "Savez-vous ce qui est le plus important quand on exerce une fonction comme la mienne ?";
+	next;
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "À vous voir ainsi, il semblerait que non ... Le plus important c'est d'avoir la classe en toute circonstance !";
+	next;
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "Si vous le désirez, je peux vous faire confectionner un magnifique ^830101Musketeer Hat [1]^000000 !";
+	menu "J'aimerais avoir un ^830101Musketeer Hat [1]^000000",OUI,"Non-merci ...",NON;
+OUI:
+		if (countitem(2221) > 0 && countitem(6394) > 49 && countitem(7063) > 99 && countitem(6393) > 29 && countitem(975) > 1 && countitem(7166) > 14 && countitem(1111) > 0) {
+		next;
+		mes "^00ff2a[Dartagnan]^000000";
+		mes "Bien, il me semble que vous disposez de tout ce qu'il faut pour confectionner le ^830101Musketeer Hat [1]^000000 !";
+		mes "C'est prêt dans une minute !";
+		next;
+		mes "^00ff2a[Dartagnan]^000000";
+		mes "* Cherche dans son inventaire *";
+		mes "* .....................*";
+		next;
+		mes "^00ff2a[Dartagnan]^000000";
+		mes " .......... ";
+		mes "Et voilà !";
+		next;
+		delitem 2221,1; //Hat [1]
+		delitem 6394,50; //Golden Feather
+		delitem 7063,100; //Soft Feather
+		delitem 6393,30; //Round Feather
+		delitem 975,2; //Scarlet Dyestuffs
+		delitem 7166,15; //Soft Silk
+		delitem 1111,1; //Rapier [3]
+		getitem 5469,1; //Musketeer Hat [1]
+		next;
+		mes "^00ff2a[Dartagnan]^000000";
+		mes "Maintenant, vous ressemblerez enfin à quelque-chose !";
+		mes "... Enfin, je l'espère ...";
+		close;
+	}
+	next;
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "Je vois ...?";
+	mes "Vous aussi vous voulez avoir la classe ...";
+	next;
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "Vous n'avez pas tout ce qu'il faut ...";
+	next;
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "  1 ^21707eHat [1]^000000";
+	mes " 50 ^21707eGolden Feather^000000";
+	mes "100 ^21707eSoft Feather^000000";
+	mes " 30 ^21707eRound Feather^000000";
+	mes "  2 ^21707eScarlet Dyestuffs^000000";
+	mes " 15 ^21707eSoft Silk^000000";
+	mes "  1 ^21707eRappier [3]^000000";
+	next;
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "Revenez me voir une fois que vous aurez tout ça !";
+	close;
+	end;
+NON:
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "Je vois ...";
+	next;
+	mes "^00ff2a[Dartagnan]^000000";
+	mes "Bonne journée !";
+	close;
+	end;
+}
