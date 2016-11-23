@@ -1,0 +1,17 @@
+//================================================
+//=    Script: display guild message on login only
+//=    Autor : Tyrfing (also known  as Uriah) 
+//=    Status: local verified /untested on live 
+//================================================
+
+-	script	guildlogin	-1,{
+OnPCLoginEvent:
+query_sql("SELECT mes FROM `guild` WHERE guild_id <= '"+ getcharid(2) +"'",.@guild_msg$);
+announce @guild_msg$,19;
+
+// -ou-
+//query_sql("SELECT name FROM `char` WHERE `char_id` = '"+ getarg(1) +"'", .@user_name$);
+//message .@user_name$,.@guild_msg$;
+
+end;
+}
