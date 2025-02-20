@@ -1,26 +1,26 @@
 malaya,272,227,5	script	Dartagnan	10118,{
 	mes "^00ff2a[Dartagnan]^000000";
-	mes "Mmmh .... Qui diable êtes-vous ?";
+	mes "Mmmh .... Qui diable Ãªtes-vous ?";
 	next;
 	mes "^00ff2a[Dartagnan]^000000";
-	mes "Ho ! Salutations à vous, jeune aventurier prénommé "+strcharinfo(0)+" !";
-	mes "Je me nomme Dartagnan, je fais partie de la légendaire garde royale d'un royaume très lointain ...";
+	mes "Ho ! Salutations Ã  vous, jeune aventurier prÃ©nommÃ© "+strcharinfo(0)+" !";
+	mes "Je me nomme Dartagnan, je fais partie de la lÃ©gendaire garde royale d'un royaume trÃ¨s lointain ...";
 	next;
 	mes "^00ff2a[Dartagnan]^000000";
 	mes "Savez-vous ce qui est le plus important quand on exerce une fonction comme la mienne ?";
 	next;
 	mes "^00ff2a[Dartagnan]^000000";
-	mes "À vous voir ainsi, il semblerait que non ... Le plus important c'est d'avoir la classe en toute circonstance !";
+	mes "Ã€ vous voir ainsi, il semblerait que non ... Le plus important c'est d'avoir la classe en toute circonstance !";
 	next;
 	mes "^00ff2a[Dartagnan]^000000";
-	mes "Si vous le désirez, je peux vous faire confectionner un magnifique ^830101Musketeer Hat [1]^000000 !";
+	mes "Si vous le dÃ©sirez, je peux vous faire confectionner un magnifique ^830101Musketeer Hat [1]^000000 !";
 	menu "J'aimerais avoir un ^830101Musketeer Hat [1]^000000",OUI,"Non-merci ...",NON;
 OUI:
 		if (countitem(2221) > 0 && countitem(6394) > 49 && countitem(7063) > 99 && countitem(6393) > 29 && countitem(975) > 1 && countitem(7166) > 14 && countitem(1111) > 0) {
 		next;
 		mes "^00ff2a[Dartagnan]^000000";
 		mes "Bien, il me semble que vous disposez de tout ce qu'il faut pour confectionner le ^830101Musketeer Hat [1]^000000 !";
-		mes "C'est prêt dans une minute !";
+		mes "C'est prÃªt dans une minute !";
 		next;
 		mes "^00ff2a[Dartagnan]^000000";
 		mes "* Cherche dans son inventaire *";
@@ -28,7 +28,7 @@ OUI:
 		next;
 		mes "^00ff2a[Dartagnan]^000000";
 		mes " .......... ";
-		mes "Et voilà !";
+		mes "Et voilÃ  !";
 		next;
 		delitem 2221,1; //Hat [1]
 		delitem 6394,50; //Golden Feather
@@ -40,8 +40,8 @@ OUI:
 		getitem 5469,1; //Musketeer Hat [1]
 		next;
 		mes "^00ff2a[Dartagnan]^000000";
-		mes "Maintenant, vous ressemblerez enfin à quelque-chose !";
-		mes "... Enfin, je l'espère ...";
+		mes "Maintenant, vous ressemblerez enfin Ã  quelque-chose !";
+		mes "... Enfin, je l'espÃ¨re ...";
 		close;
 	}
 	next;
@@ -62,15 +62,16 @@ OUI:
 	mes "  1 ^21707eRappier [3]^000000";
 	next;
 	mes "^00ff2a[Dartagnan]^000000";
-	mes "Revenez me voir une fois que vous aurez tout ça !";
+	mes "Revenez me voir une fois que vous aurez tout Ã§a !";
 	close;
 	end;
 NON:
 	mes "^00ff2a[Dartagnan]^000000";
 	mes "Je vois ...";
+	mes "*soupire* ...";
 	next;
 	mes "^00ff2a[Dartagnan]^000000";
-	mes "Bonne journée !";
+	mes "Bonne journÃ©e !";
 	close;
 	end;
 }
