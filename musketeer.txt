@@ -68,7 +68,6 @@ OUI:
 NON:
 	mes "^00ff2a[Dartagnan]^000000";
 	mes "Je vois ...";
-	mes "*soupire* ...";
 	next;
 	mes "^00ff2a[Dartagnan]^000000";
 	mes "Bonne journée !";
